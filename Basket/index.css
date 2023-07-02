@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /*Containers*/
+  .header {
+    background-image: linear-gradient(to right, rgb(0, 9, 94), rgb(11, 12, 35));
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  .header_image {
+    cursor: pointer;
+  }
+  .header_list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  .header_list_item {
+    color: white;
+    margin-left: 50px;
+    margin-top: 5px;
+    border-bottom: solid 5px rgba(0, 0, 0, 0);
+    cursor: pointer;
+  }
+  .header_list_item_link {
+    text-decoration: none;
+    color: white;
+  }
+  .header_list_item:hover {
+    border-bottom: solid 2px white;
+    transition-duration: 1s;
+  }
+  .header_button {
+    color: white;
+    margin-bottom: 5px;
+    size: 1cm;
+    border-radius: 0.6cm;
+    border: solid 2px white;
+    padding: 15px 30px;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  /* .header_button:hover {
+    color: rgb(255, 71, 146);
+    background-color: white;
+    transition-duration: 1s;
+  } */
+  .container2 {
+    padding: 100px 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container2_first_text {
+    font-size: small;
+    color: rgb(255, 71, 146);
+    font-weight: bold;
+    letter-spacing: 0.05cm;
+  }
+  .container2_second_text {
+    width: 480px;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 0.05cm;
+  }
+  .container2_boxes {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .container2_boxes_box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 10px;
+    height: 0px;
+    gap: 20px;
+    border-radius: 0.2cm;
+    width: 350px;
+  }
+  .container2_boxes_box_basket {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 240px 10px;
+    height: 0px;
+    gap: 5px;
+    border-radius: 0.2cm;
+    width: 350px;
+    transition: 2s;
+  }
+  .container2_boxes_box_icon {
+    color: rgb(255, 71, 146);
+    width: auto;
+    font-size: 1cm;
+    border-radius: 1.5cm;
+    padding: 30px;
+    box-shadow: 1px 2px 1px rgba(190, 199, 212, 0.6);
+  }
+  .container2_boxes_box_header {
+    font-size: 0.8cm;
+  }
+  .container2_boxes_box:hover {
+    height: 350px;
+    background-image: linear-gradient(turquoise,   orange);
+    transition-duration: 1s;
+  }
+  .container2_boxes_box_basket:hover {
+    height: 350px;
+    background-image: linear-gradient(turquoise,   orange);
+    transition-duration: 1s;
+  }
+  .container2_boxes_box:hover .container2_boxes_box_icon {
+    box-shadow: none;
+    background-color: white;
+    transition-duration: 1s;
+  }
+  .container2_boxes_box_basket:hover .container2_boxes_box_icon {
+    box-shadow: none;
+    background-color: white;
+    transition-duration: 1s;
+  }
+  .container2_boxes_box:hover .container2_boxes_box_header {
+    color: white;
+  }
+  .container2_boxes_box_basket:hover .container2_boxes_box_header {
+    color: white;
+  }
+  .container2_boxes_box:hover .container2_boxes_box_text {
+    color: white;
+  }
+  .container2_boxes_box_basket:hover .container2_boxes_box_text {
+    color: white;
+  }
+
+  .addBasket-btn{
+    padding: 10px 10px;
+    background-color: rgb(112, 112, 232);
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+}
+.addBasket-btn:hover{
+  background-color: rgb(31, 177, 31);
+}
+
+.removeBtn{
+  padding: 10px 10px;
+  background-color: red;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+}
+.removeBtn:hover{
+  opacity: 0.5;
+}
+
+.increaseDecreaseBtn{
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.increaseDecreaseBtn:hover{
+  background-color: azure;
+}
+ 
+  .basketInVisible{
+    visibility: hidden;
+  }
+
+  .basketVisible{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 3px 10px 10px gainsboro;
+    width: 500px !important;
+    height: 2000px !important;
+    right: 0px !important;
+    position: absolute !important;
+    top: 76px !important;
+    visibility: visible !important;
+    transition: 1s;
+  }
